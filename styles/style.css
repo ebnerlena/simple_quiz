@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.maxwidthcontainer {
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.btn {
+  background-color: #3764e0;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  border-radius: 15px;
+  border: 3px solid #231f20;
+  will-change: all;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 0 3px #231f20;
+  font-weight: 500;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.btn:hover, .btn:focus {
+  background-color: #231f20;
+  box-shadow: 0 0 5px black;
+  transform: scale(1.01, 1.01);
+  transition: all 0.2s linear;
+}
+.btn:active:focus {
+  transform: scale(1.005, 1.005);
+  transform: translateY(3px);
+  transition: all 0.2s linear;
+}
+.btn:disabled, .btn.disabled {
+  background: #231f20;
+  color: #df8714;
+  cursor: default;
+  border: 3px solid transparent;
+  box-shadow: 0 0 3px #231f20;
+  transition: all 0.4s linear;
+  transform: scale(0.9, 0.9);
+}
+.btn:disabled:active, .btn.disabled:active {
+  transform: scale(0.9, 0.9);
+}
+
+html {
+  font-family: monospace;
+  font-size: 16px;
+  color: #231f20;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (min-width: 1300px) {
+  html {
+    font-size: 105%;
+  }
+}
+html body {
+  height: 100vh;
+  min-height: 100%;
+  background-color: #df8714;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1;
+}
+html body header {
+  height: 20vh;
+  padding: 1rem;
+}
+html body header h1 {
+  font-size: 3rem;
+}
+html body main {
+  padding: 1rem;
+  height: 100%;
+  font-size: 1.5rem;
+}
+html body main section {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 5px #231f20;
+  border-radius: 5px;
+  padding: 1rem;
+  height: 70vh;
+  width: 70vw;
+}
+html body main section h2 {
+  font-size: 2rem;
+}
+html body main section h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+html body main section #answers ul {
+  list-style: disc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+html body main section #answer-buttons ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body footer {
+  background-color: #231f20;
+  height: 20vh;
+  color: #df8714;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
